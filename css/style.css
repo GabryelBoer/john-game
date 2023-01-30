@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#game-board {
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, rgb(253, 176, 146), rgb(255, 239, 167));
+}
+
+#floor {
+    width: 700px;
+    height: 200px;
+    background-color: rgb(253, 200, 120);
+    margin: auto;
+}
+
+.score {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    left: 10px;
+    font-size: 2.5em;
+
+}
+
+#cacto {
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    animation: cacto-animation 1.5s infinite linear;
+}
+
+.john {
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    left: 100px;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+@keyframes cacto-animation {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -80px;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0px;
+        content:url('/images/johnjump1.png')
+    }
+
+    40% {
+        bottom: 200px;
+        content:url('/images/johnjump1.png')
+    }
+
+    50% {
+        bottom: 200px;
+        content:url('/images/johnjump2.png')
+    }
+
+    60% {
+        bottom: 200px;
+        content:url('/images/johnjump2.png')
+    }
+
+    90% {
+        content:url('/images/johnjump3.png')
+    }
+
+    100% {
+        bottom: 0px;
+        content:url('/images/johnjump3.png')
+    }
+}
