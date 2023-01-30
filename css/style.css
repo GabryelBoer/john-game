@@ -61,30 +61,30 @@
 @keyframes jump {
     0% {
         bottom: 0px;
-        content:url("/images/johnjump1.png")
+        content:url("../images/johnjump1.png")
     }
 
     40% {
         bottom: 200px;
-        content:url("/images/johnjump1.png")
+        content:url("../images/johnjump1.png")
     }
 
     50% {
         bottom: 200px;
-        content:url("/images/johnjump2.png")
+        content:url("../images/johnjump2.png")
     }
 
     60% {
         bottom: 200px;
-        content:url("/images/johnjump2.png")
+        content:url("../images/johnjump2.png")
     }
 
     90% {
-        content:url("/images/johnjump3.png")
+        content:url("../images/johnjump3.png")
     }
 
     100% {
         bottom: 0px;
-        content:url("/images/johnjump3.png")
+        content:url("../images/johnjump3.png")
     }
 }

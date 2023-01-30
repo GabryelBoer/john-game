@@ -28,7 +28,7 @@ const loop = setInterval(() => {
 
         john.style.animation = 'none';
         john.style.bottom = `${johnPosition}px`;
-        john.src = "/images/johndeath.png";
+        john.src = "../images/johndeath.png";
         john.style.marginLeft = '-15px';
         gameover = true;
         clearInterval(loop);
