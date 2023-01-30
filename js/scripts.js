@@ -32,6 +32,7 @@ const loop = setInterval(() => {
         john.style.marginLeft = '-15px';
         gameover = true;
         clearInterval(loop);
+        
         setTimeout(() => {
             alert("Game Over")
             location.reload();
