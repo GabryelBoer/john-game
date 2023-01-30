@@ -12,12 +12,12 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(to bottom, rgb(253, 176, 146), rgb(255, 239, 167));
+    background-image: linear-gradient(to top, rgb(255, 240, 173), rgb(255, 179, 136));
 }
 
 #floor {
     width: 1000px;
-    height: 200px;
+    height: 100px;
     background-color: rgb(253, 200, 120);
     margin: auto;
 }
@@ -44,8 +44,43 @@
     left: 100px;
 }
 
+#clouds {
+    position: absolute;
+    width: 800px;
+    bottom: 150px;
+    animation: clouds 100s infinite linear;
+
+}
+
+#mountains {
+    position: absolute;
+    width: 1500px;
+    bottom: 0px;
+    animation: mountains 500s infinite linear;
+}
+
 .jump {
     animation: jump 500ms ease-out;
+}
+
+@keyframes clouds {
+    0% {
+        left: 97%;
+    }
+
+    100% {
+        left: -78%;
+    }
+}
+
+@keyframes mountains {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: -50%;
+    }
 }
 
 @keyframes cacto-animation {

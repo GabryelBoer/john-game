@@ -20,7 +20,6 @@ const jump = () => {
 const loop = setInterval(() => {
     let johnPosition = +window.getComputedStyle(john).bottom.replace('px', '');
     let cactoPosition = cacto.offsetLeft;
-    console.log(johnPosition);
 
     if(cactoPosition <= 175 && johnPosition <= 100 && cactoPosition > 50) {
         cacto.style.animation = 'none';
