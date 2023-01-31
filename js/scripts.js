@@ -33,7 +33,7 @@ const loop = setInterval(() => {
         clearInterval(loop);
         
         setTimeout(() => {
-            alert("Game Over")
+            alert("Game Over, Me chame apenas de John!")
             location.reload();
         }, 100);
     }
